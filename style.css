@@ -90,23 +90,16 @@ header {
 .nav-button {
     width: 52px;
     height: 52px;
-    background-color: #f60;
+    background-color: transparent; /* Прозрачный фон */
     border: none;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
     background-image: url('List.png'); /* Замените на путь к вашей иконке List.png */
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.nav-button:hover {
-    background-color: #c50;
 }
 
 /* Стили для выпадающего меню */
