@@ -181,25 +181,6 @@ header {
     }
 }
 
-/* Стили для кнопки меню */
-.mobile-phone  {
-    width: 52px;
-    height: 52px;
-    background-color: transparent; /* Прозрачный фон */
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background-image: url('Phone.png'); /* Замените на путь к вашей иконке Phone.png */
-    background-size: 24px 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.mobile-phone :hover {
-    background-color: #c50;
-}
 
 .section_1 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
