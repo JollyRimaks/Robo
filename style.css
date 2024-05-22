@@ -99,11 +99,10 @@ header {
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s;
-}
-
-.nav-button img {
-    width: 24px;
-    height: 24px;
+    background-image: url('List.png'); /* Замените на путь к вашей иконке List.png */
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav-button:hover {
@@ -192,6 +191,7 @@ header {
         gap: 20px;
     }
 }
+
 .section_1 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
     text-align: center;
