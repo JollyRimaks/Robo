@@ -68,6 +68,29 @@ header {
     height: 52px;
 }
 
+/* Анимация для появления и исчезания меню */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 500px;
+        opacity: 1;
+    }
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+}
+
 .nav-list {
     display: none;
     position: absolute;
@@ -76,12 +99,17 @@ header {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .nav-list a {
     display: block;
     padding: 10px 20px;
     transition: background 0.3s, color 0.3s;
+    color: #333;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 .nav-list a:hover {
@@ -90,8 +118,19 @@ header {
     border-radius: 5px;
 }
 
+/* Управление анимацией при наведении */
 .nav-button:hover + .nav-list, .nav-list:hover {
     display: block;
+    animation: slideDown 0.3s forwards;
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* Для скрытия меню */
+.nav-container:hover .nav-list {
+    animation: slideUp 0.3s forwards;
+    max-height: 0;
+    opacity: 0;
 }
 
 /* Адаптивные стили */
@@ -473,3 +512,5 @@ footer {
         padding: 50px 5%;
     }
 }
+
+
