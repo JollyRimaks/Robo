@@ -454,3 +454,12 @@ footer {
         justify-content: center;
     }
 }
+@media (max-width: 768px) {
+    .section_4 h2 {
+        font-size: 28px;
+    }
+
+    .section_5 {
+        padding: 50px 5%;
+    }
+}
