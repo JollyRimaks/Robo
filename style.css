@@ -90,23 +90,18 @@ header {
 .nav-button {
     width: 52px;
     height: 52px;
-    background-color: transparent; /* Прозрачный фон */
+    background-color: transparent;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    background-image: url('List.png'); /* Замените на путь к вашей иконке List.png */
-    background-size: 24px 24px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('List.png');
+    background-size: cover;
 }
 
 /* Стили для выпадающего меню */
 .nav-list {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 10px);
     right: 0;
     background: #333;
     color: white;
@@ -175,6 +170,7 @@ header {
     }
     .nav-container, .mobile-phone {
         display: flex;
+        align-items: center;
     }
     .desktop-phone {
         display: none;
