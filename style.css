@@ -51,6 +51,14 @@ header {
     align-items: center;
 }
 
+.desktop-phone {
+    display: none;
+}
+
+.mobile-phone {
+    display: flex;
+}
+
 .nav-container {
     position: relative;
 }
@@ -86,16 +94,16 @@ header {
     display: block;
 }
 
-.phone-nav {
-    display: none;
-}
-
+/* Адаптивные стили */
 @media (min-width: 768px) {
     .nav1-container {
         display: block;
     }
-    .nav-container, .phone-nav {
+    .nav-container, .mobile-phone {
         display: none;
+    }
+    .desktop-phone {
+        display: block;
     }
 
     .nav1-container a {
@@ -113,15 +121,17 @@ header {
     .nav1-container {
         display: none;
     }
-    .nav-container, .phone-nav {
+    .nav-container, .mobile-phone {
         display: flex;
+    }
+    .desktop-phone {
+        display: none;
     }
     .centered-list {
         flex-direction: column;
         gap: 20px;
     }
 }
-
 .section_1 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
     text-align: center;
