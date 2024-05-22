@@ -408,6 +408,7 @@ header {
     background: #c50;
 }
 
+/* Стили для футера */
 footer {
     background: #333;
     color: white;
@@ -441,9 +442,15 @@ footer {
     margin: 0;
 }
 
+/* Стили для компьютерной версии */
 @media (min-width: 768px) {
     .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column; /* Изменено с row на column */
+        align-items: center;
+        gap: 10px; /* Регулировка промежутков между элементами */
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
