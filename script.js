@@ -41,7 +41,8 @@ $(document).ready(function() {
 document.addEventListener('DOMContentLoaded', function() {
     const navButton = document.querySelector('.nav-button');
     const navList = document.querySelector('.nav-list');
-
+    
+ // Скрипт для открытия и закрытия навигационного меню с анимацией
     navButton.addEventListener('click', function() {
         if (navList.style.display === 'block') {
             navList.style.animation = 'slideUp 0.3s forwards';
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Скрипт для закрытия навигационного меню при уходе мыши с его области
     navList.addEventListener('mouseleave', function() {
         navList.style.animation = 'slideUp 0.3s forwards';
         setTimeout(() => {
