@@ -388,6 +388,11 @@ header {
     text-align: center;
 }
 
+.section_5 h2 {
+    font-size: 36px; /* Размер шрифта */
+    margin-bottom: 30px; /* Добавляем отступ снизу */
+}
+
 .styled-list {
     display: flex;
     flex-direction: column;
@@ -410,12 +415,6 @@ header {
     text-align: center;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.package.pro {
-    border: 2px solid #f60;
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .package h3 {
