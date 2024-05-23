@@ -1,4 +1,5 @@
 body, h1, h2, h3, h4, p, ul, li, input, a, button {
+    /* Установка базовых стилей и сброс отступов */
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,21 +9,25 @@ body, h1, h2, h3, h4, p, ul, li, input, a, button {
 }
 
 body {
+    /* Основные стили для body */
     font-family: 'Lato', 'Jost', 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
 }
 
 ul {
+    /* Удаление стандартных маркеров списка */
     list-style: none;
 }
 
 a {
+    /* Удаление стандартного подчеркивания и установка цвета */
     text-decoration: none;
     color: inherit;
 }
 
 header {
+    /* Стили для хедера */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,34 +37,41 @@ header {
 }
 
 .logo img {
+    /* Размер логотипа */
     width: 136px;
     height: 29px;
 }
 
 .nav1-container {
+    /* Скрытие контейнера для десктопной навигации по умолчанию */
     display: none;
 }
 
 .centered-list {
+    /* Выравнивание элементов списка по центру с отступами */
     display: flex;
     gap: 40px;
 }
 
 .img-container {
+    /* Контейнер для изображений */
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
 .desktop-phone {
+    /* Скрытие номера телефона для десктопной версии */
     display: none;
 }
 
 .mobile-phone {
+    /* Отображение номера телефона для мобильной версии */
     display: flex;
 }
 
 .nav-container {
+    /* Относительное позиционирование контейнера навигации */
     position: relative;
 }
 
@@ -121,6 +133,7 @@ header {
 }
 
 .nav-list a:hover {
+    /* Стили для ссылок в меню при наведении */
     background: #f60;
     color: white;
     border-radius: 5px;
@@ -144,6 +157,7 @@ header {
 /* Адаптивные стили */
 @media (min-width: 768px) {
     .nav1-container {
+        /* Отображение десктопной навигации */
         display: block;
     }
     .nav-container, .mobile-phone {
@@ -181,8 +195,8 @@ header {
     }
 }
 
-
 .section_1 {
+    /* Стили для первой секции */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
     text-align: center;
     color: white;
@@ -190,18 +204,21 @@ header {
 }
 
 .text_1 h1 {
+    /* Стили заголовка в первой секции */
     font-size: 48px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .text_1 p {
+    /* Стили абзаца в первой секции */
     font-size: 24px;
     margin-bottom: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .group {
+    /* Стили для группы элементов */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,6 +227,7 @@ header {
 }
 
 .button {
+    /* Стили для кнопок */
     background: #f60;
     color: white;
     padding: 10px 20px;
@@ -223,17 +241,20 @@ header {
 }
 
 .section_2 {
+    /* Стили для второй секции */
     padding: 50px 10%;
     background: #fff;
     text-align: center;
 }
 
 .highlight {
+    /* Стили для выделенного текста */
     color: #f60;
     font-weight: bold;
 }
 
 .text_chisla ul {
+    /* Стили для списка в текстовой секции */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,32 +263,38 @@ header {
 
 @media (min-width: 768px) {
     .text_chisla ul {
+        /* Изменение стилей списка на десктопе */
         flex-direction: row;
         justify-content: space-around;
     }
 }
 
 .text_chisla li h2 {
+    /* Стили заголовков в списке */
     font-size: 36px;
     color: #f60;
 }
 
 .text_chisla li p {
+    /* Стили абзацев в списке */
     font-size: 18px;
 }
 
 .section_3 {
+    /* Стили для третьей секции */
     background: #f5f5f5;
     padding: 50px 10%;
     text-align: center;
 }
 
 .zagol {
+    /* Стили для заголовка в третьей секции */
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .zagolText ul {
+    /* Стили для списка в заголовочной секции */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,21 +303,25 @@ header {
 
 @media (min-width: 768px) {
     .zagolText ul {
+        /* Изменение стилей списка на десктопе */
         flex-direction: row;
         justify-content: space-around;
     }
 }
 
 .zagolText li h3 {
+    /* Стили заголовков в списке */
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .zagolText li p {
+    /* Стили абзацев в списке */
     font-size: 18px;
 }
 
 .tooltip {
+    /* Стили для тултипов */
     position: relative;
     display: inline-block;
 }
@@ -300,6 +331,7 @@ header {
 }
 
 .tooltip-text {
+    /* Стили для текста в тултипе */
     display: none;
     position: absolute;
     background-color: #333;
@@ -316,6 +348,7 @@ header {
 }
 
 .tooltip-text::after {
+    /* Стрелка для тултипа */
     content: "";
     position: absolute;
     top: 100%;
@@ -327,21 +360,25 @@ header {
 }
 
 .tooltip:hover .tooltip-text {
+    /* Показ тултипа при наведении */
     display: block;
 }
 
 .section_4 {
+    /* Стили для четвертой секции */
     padding: 50px 10%;
     text-align: center;
 }
 
 .photos-container {
+    /* Контейнер для фотографий */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .photo-item {
+    /* Стили для каждого элемента с фотографией */
     width: 100%;
     margin-bottom: 20px;
     background: white;
@@ -352,48 +389,57 @@ header {
 
 @media (min-width: 768px) {
     .photo-item {
+        /* Изменение ширины фото на десктопе */
         width: calc(50% - 20px);
     }
 }
 
 @media (min-width: 1024px) {
     .photo-item {
+        /* Изменение ширины фото на большом экране */
         width: calc(25% - 20px);
     }
 }
 
 .photo-caption {
+    /* Подпись под фотографией */
     padding: 10px;
     text-align: center;
 }
 
 .photo-caption h3 {
+    /* Заголовок подписи */
     font-size: 20px;
     margin-bottom: 10px;
     color: #f60;
 }
 
 .photo-caption a {
+    /* Ссылка в подписи */
     color: #f60;
     text-decoration: underline;
 }
 
 .section_4 h2 {
+    /* Заголовок четвертой секции */
     font-size: 40px;
 }
 
 .section_5 {
+    /* Стили для пятой секции */
     background: #f5f5f5;
     padding: 50px 10%;
     text-align: center;
 }
 
 .section_5 h2 {
-    font-size: 36px; /* Размер шрифта */
-    margin-bottom: 30px; /* Добавляем отступ снизу */
+    /* Размер шрифта заголовка пятой секции */
+    font-size: 36px;
+    margin-bottom: 30px;
 }
 
 .styled-list {
+    /* Стили для списка в пятой секции */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,12 +448,14 @@ header {
 
 @media (min-width: 768px) {
     .styled-list {
+        /* Изменение стилей списка на десктопе */
         flex-direction: row;
         justify-content: center;
     }
 }
 
 .package {
+    /* Стили для пакетов */
     flex: 1;
     background: white;
     padding: 20px;
@@ -418,26 +466,31 @@ header {
 }
 
 .package h3 {
+    /* Заголовок пакета */
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 .package h4 {
+    /* Цена в пакете */
     font-size: 36px;
     color: #f60;
     margin-bottom: 20px;
 }
 
 .section_6 {
+    /* Стили для шестой секции */
     padding: 50px 10%;
     text-align: center;
 }
 
 .section_6 h2 {
-    font-size: 32px; /* Увеличьте размер шрифта по вашему желанию */
+    /* Размер шрифта заголовка в шестой секции */
+    font-size: 32px;
 }
 
 .form {
+    /* Стили для формы */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,6 +498,7 @@ header {
 }
 
 .form input, .form select {
+    /* Стили для полей ввода и выбора */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -458,6 +512,7 @@ header {
 }
 
 .form input[type="submit"] {
+    /* Стили для кнопки отправки формы */
     padding: 10px 20px;
     background: #f60;
     color: white;
@@ -480,6 +535,7 @@ footer {
 }
 
 .footer-content {
+    /* Контейнер для контента футера */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,36 +543,41 @@ footer {
 }
 
 .social-icons {
+    /* Контейнер для иконок социальных сетей */
     display: flex;
     gap: 20px;
 }
 
 .social-icons img {
+    /* Размер иконок социальных сетей */
     width: 24px;
     height: 24px;
     transition: transform 0.3s;
 }
 
 .social-icons img:hover {
+    /* Увеличение иконок при наведении */
     transform: scale(1.2);
 }
 
 .footer-content p {
+    /* Стили для текста в футере */
     margin: 0;
 }
 
 /* Стили для компьютерной версии */
 @media (min-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Изменено с row на column */
+        flex-direction: column; 
         align-items: center;
-        gap: 10px; /* Регулировка промежутков между элементами */
+        gap: 10px; 
     }
 
     .social-icons {
         justify-content: center;
     }
 }
+
 @media (max-width: 768px) {
     .section_4 h2 {
         font-size: 28px;
@@ -531,12 +592,11 @@ footer {
 @media (max-width: 768px) {
     .styled-list {
         flex-direction: column;
-        align-items: stretch; /* Растягивает элементы по ширине родительского контейнера */
+        align-items: stretch; 
     }
 
     .package {
-        flex: 1 1 auto; /* Позволяет элементам растягиваться равномерно */
-        height: auto; /* Устанавливает автоматическую высоту для корректировки размера */
+        flex: 1 1 auto; 
+        height: auto;
     }
 }
-
